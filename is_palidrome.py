@@ -15,7 +15,6 @@ class Solution(object):
                 break
             if val != lista[-(idx +1)]:
                 return False
-                break 
         return True
 
 x = '121'
