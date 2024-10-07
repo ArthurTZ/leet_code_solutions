@@ -1,3 +1,4 @@
+### - BIG O(n^2)
 class Solution(object):
     def twoSum(self, nums : list[int], target : int):
         """
@@ -11,10 +12,16 @@ class Solution(object):
                 if nums[i] + nums[j] == target:
                     return [i,j]
 
-        
-nums = [3,2]
-target = 5
-        
 
-objet = Solution().twoSum(nums=[3,2], target=5)        
-print(objet)
+
+### - BIG O(n)
+def twoSum(self, nums : list[int], target : int):
+    hash_table = dict()
+
+    for idx,value in enumerate(nums):
+        comp = target - value
+
+        if comp in hash_table:
+            return hash_table[comp], idx
+        
+        hash_table[value] = idx 
