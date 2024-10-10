@@ -17,10 +17,24 @@ class Solution(object):
                 return False
         return True
 
-x = '121'
-print(Solution().isPalindrome(x))
-                            
+
+# print(Solution().isPalindrome(x))
+
+# otimização para O(N)
+class Solution(object):
+    def isPalindrome(self, x):
+
+        x = str(x)
+
+        if x < 0:
+            return False
+        
+        for idx in range(len(x) // 2):
+            if x[idx] != x[-(idx + 1)]:
+                return False
+            
+        return True
 
         
 
-        
+#        
