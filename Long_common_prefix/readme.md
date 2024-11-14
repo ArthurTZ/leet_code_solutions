@@ -81,6 +81,3 @@ class Solution:
 
 ---
 
-### **Link para o repositório**
-
-Se você deseja ver mais soluções para problemas do LeetCode, acesse o repositório com as implementações completas: [https://lnkd.in/dPyRR6W4](https://lnkd.in/dPyRR6W4)
